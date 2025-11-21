@@ -1,0 +1,15 @@
+# ~/.config/wofi/config
+
+mode=drun,run
+width=30%
+height=40%
+
+allow_images=true
+insensitive=true
+hide_scroll=true
+dynamic_lines=false
+matching=fuzzy
+sort_order=alphabetical
+columns=3
+location=center
+parse_mode=pango

@@ -1,0 +1,62 @@
+* {
+    /* Set a custom font for the entire window */
+    font-family: "JetBrains Mono Nerd Font"; 
+    font-size: 14pt; 
+}
+
+window {
+    /* Main window box */
+    /* Mantle background with a slight transparency */
+    background-color: rgba(24, 24, 37, 0.95); /* Catppuccin Mantle */
+    border: 2px solid #585b70; /* Catppuccin Surface1 for a subtle border */
+    border-radius: 12px;
+    color: #cdd6f4; /* Catppuccin Text */
+    margin: 10px;
+}
+
+#input {
+    /* Search box */
+    /* Surface0 background for the input area */
+    background-color: #313244; /* Catppuccin Surface0 */
+    color: #cdd6f4; /* Catppuccin Text */
+    border: none;
+    border-radius: 8px;
+    
+    /* --- IMPORTANT CHANGE HERE --- */
+    /* Added padding-left to make space for the logo image in the prompt */
+    padding: 10px; 
+    padding-left: 45px; 
+    /* ----------------------------- */
+
+    margin: 8px;
+}
+
+#outer-box {
+    /* Box that holds the list of results */
+    padding: 5px;
+}
+
+#entry {
+    /* Each individual application entry */
+    padding: 8px;
+    margin: 4px;
+    border-radius: 6px;
+    /* Optional: Use a very subtle hover color if Wofi supports it */
+}
+
+#entry:selected {
+    /* Highlight when you select an app */
+    background-color: #89b4fa; /* Catppuccin Blue (A bright accent) */
+    color: #1e1e2e; /* Catppuccin Base (Dark color for contrast) */
+    font-weight: bold; /* Make the selected text stand out */
+}
+
+/* Optional: Make the prompt text (e.g., "Search") a Catppuccin color */
+#text:selected {
+    color: #1e1e2e; /* Darker text when selected */
+}
+
+#text {
+    color: #f5e0dc; /* Catppuccin Rosewater or another vibrant color for the prompt text */
+}
+
